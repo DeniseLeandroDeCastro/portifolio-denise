@@ -1,0 +1,97 @@
+<section class="contact" id="contato">
+  <div class="contact__container">
+
+    <div class="contact__info">
+      <span>Contato</span>
+
+      <h2>Vamos conversar?</h2>
+
+      <p>
+        Estou aberta a oportunidades e conexões profissionais.
+        Se você acredita que meu perfil pode contribuir com sua equipe,
+        entre em contato.
+      </p>
+
+      <div class="contact__links">
+        <a
+          href="https://www.linkedin.com/in/denise-castro-59425b4a/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/DeniseLeandroDeCastro"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <form
+      class="contact__form"
+      (ngSubmit)="sendMessage()"
+    >
+
+      <div class="contact__field">
+        <label for="name">Nome</label>
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Seu nome"
+          [(ngModel)]="name"
+        />
+      </div>
+
+      <div class="contact__field">
+        <label for="email">E-mail</label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="seuemail@exemplo.com"
+          [(ngModel)]="email"
+        />
+      </div>
+
+      <div class="contact__field">
+        <label for="message">Mensagem</label>
+
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Escreva sua mensagem"
+          [(ngModel)]="message"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="isSending()"
+      >
+        {{ isSending() ? 'Enviando...' : 'Enviar mensagem' }}
+      </button>
+
+      @if (successMessage()) {
+        <p class="contact__success">
+          {{ successMessage() }}
+        </p>
+      }
+
+      @if (errorMessage()) {
+        <p class="contact__error">
+          {{ errorMessage() }}
+        </p>
+      }
+
+    </form>
+
+  </div>
+</section>

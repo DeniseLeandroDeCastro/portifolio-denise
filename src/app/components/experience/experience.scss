@@ -1,0 +1,147 @@
+.experience {
+  background-color: #0a1624;
+  padding: 6rem 2rem;
+}
+
+.experience__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience__heading {
+  margin-bottom: 3.5rem;
+}
+
+.experience__heading span {
+  color: #00d4ff;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.experience__heading h2 {
+  margin: 0.75rem 0 0;
+
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.experience__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__item {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 4rem;
+
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.experience__item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.experience__period {
+  color: #00d4ff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.experience__meta h3 {
+  margin: 0.6rem 0 0.25rem;
+
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.experience__meta p {
+  margin: 0;
+  color: #9ba9bd;
+}
+
+.experience__content {
+  color: #9ba9bd;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.experience__content p {
+  margin-top: 0;
+}
+
+.experience__content ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.experience__content li {
+  margin-bottom: 0.6rem;
+}
+
+.experience__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+
+.experience__technologies span {
+  padding: 0.4rem 0.75rem;
+
+  color: #b8c4d6;
+  background-color: rgba(0, 212, 255, 0.05);
+
+  border: 1px solid rgba(0, 212, 255, 0.25);
+  border-radius: 5px;
+
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 3rem 1.25rem;
+  }
+
+  .experience__heading {
+    margin-bottom: 2rem;
+  }
+
+  .experience__heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .experience__item {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 2rem 0;
+  }
+
+  .experience__meta h3 {
+    font-size: 1.35rem;
+  }
+
+  .experience__content {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .experience__content ul {
+    padding-left: 1.1rem;
+  }
+
+  .experience__content li {
+    margin-bottom: 0.5rem;
+  }
+
+  .experience__technologies {
+    gap: 0.55rem;
+    margin-top: 1.25rem;
+  }
+
+  .experience__technologies span {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,166 @@
+.projects {
+  background-color: #07111f;
+  padding: 1.5rem 2rem 6rem;
+}
+
+.projects__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects__heading {
+  max-width: 760px;
+  margin-bottom: 3.5rem;
+}
+
+.projects__heading span {
+  color: #00d4ff;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.projects__heading h2 {
+  margin: 0.75rem 0 1rem;
+
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+.projects__heading p {
+  margin: 0;
+
+  color: #9ba9bd;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.project-card {
+  padding: 2.2rem;
+
+  background-color: #0a1624;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 212, 255, 0.45);
+}
+
+.project-card__type {
+  color: #00d4ff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-card h3 {
+  margin: 0.75rem 0 1rem;
+
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.project-card p {
+  margin: 0;
+
+  color: #9ba9bd;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.project-card__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+
+  margin-top: 1.5rem;
+}
+
+.project-card__technologies span {
+  padding: 0.45rem 0.75rem;
+
+  color: #b8c4d6;
+  background-color: rgba(0, 212, 255, 0.05);
+
+  border: 1px solid rgba(0, 212, 255, 0.22);
+  border-radius: 5px;
+
+  font-size: 0.85rem;
+}
+
+.project-card__link {
+  display: inline-block;
+  margin-top: 2rem;
+
+  color: #00d4ff;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: transform 0.2s ease;
+}
+
+.project-card__link:hover {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 2rem 1.25rem 3.5rem;
+  }
+
+  .projects__heading {
+    margin-bottom: 2rem;
+  }
+
+  .projects__heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .projects__heading p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .project-card__technologies {
+    gap: 0.55rem;
+    margin-top: 1.25rem;
+  }
+
+  .project-card__technologies span {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  .project-card__link {
+    margin-top: 1.5rem;
+  }
+}
