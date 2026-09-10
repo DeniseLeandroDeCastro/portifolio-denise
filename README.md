@@ -1,59 +1,97 @@
-# PortfolioDenise
+# Denise Castro | Portfólio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.7.
+Portfólio profissional desenvolvido para apresentar minha trajetória como Desenvolvedora de Software, minhas competências técnicas, experiências profissionais e projetos.
 
-## Development server
+## Portfólio online
 
-To start a local development server, run:
+Acesse:
+
+**https://deniseleandrodecastro.github.io/portifolio-denise/**
+
+## Preview
+
+<img width="1830" height="932" alt="image" src="https://github.com/user-attachments/assets/2006271c-300a-459d-89a0-011844ab7c5f" />
+
+
+## Sobre o projeto
+
+Este portfólio foi desenvolvido com Angular e possui uma interface responsiva, adaptada para diferentes tamanhos de tela.
+
+A aplicação reúne informações sobre minha experiência profissional, principais competências técnicas e projetos desenvolvidos para estudo e prática.
+
+O projeto também possui formulário de contato integrado ao Formspree e publicação automatizada no GitHub Pages por meio do GitHub Actions.
+
+## Tecnologias utilizadas
+
+- Angular
+- TypeScript
+- HTML
+- SCSS
+- Git
+- GitHub
+- GitHub Actions
+- GitHub Pages
+- Formspree
+
+## Funcionalidades
+
+- Apresentação profissional
+- Seção de competências técnicas
+- Histórico de experiências profissionais
+- Apresentação de projetos
+- Links para GitHub e LinkedIn
+- Formulário de contato
+- Layout responsivo para desktop, tablet e mobile
+- Navegação interna entre as seções
+- Link para voltar ao topo
+- Deploy automatizado com GitHub Actions
+
+## Executando o projeto localmente
+
+Clone o repositório:
+
+```bash
+git clone git@github.com:DeniseLeandroDeCastro/portifolio-denise.git
+```
+
+Entre na pasta:
+
+```bash
+cd portifolio-denise
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute a aplicação:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Depois acesse:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Deploy
 
-```bash
-ng generate --help
-```
+A publicação é realizada automaticamente pelo GitHub Actions a cada novo `push` realizado na branch `master`.
 
-## Building
+O build do Angular é publicado no GitHub Pages.
 
-To build the project run:
+## Contato
 
-```bash
-ng build
-```
+**Denise Castro**
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Software Developer
 
-## Running unit tests
+LinkedIn: https://www.linkedin.com/in/denise-castro-59425b4a/
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+GitHub: https://github.com/DeniseLeandroDeCastro
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+E-mail: dmaria.natal@gmail.com
